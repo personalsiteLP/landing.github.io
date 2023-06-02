@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Персональный сайт</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript" src="script.js"></script>
+ <script src="https://kit.fontawesome.com/5cc2adbf9f.js" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">                      
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container"> 
+      <div class="logo"> 
+        <img src="img/logo.png" alt="Логотип"> 
+      </div> 
+      <nav> 
+        <a href="#about">ОБО МНЕ</a> 
+        <a href="#achievements">ДОСТИЖЕНИЯ</a> 
+        <a href="#documents">ДОКУМЕНТЫ И ПУБЛИКАЦИИ</a> 
+        <a href="#gallery">ФОТОГАЛЕРЕЯ</a> 
+        <a href="#feedback">ОБРАТНАЯ СВЯЗЬ</a> 
+        <div class="social-links">
+          <a href="https://wa.me/79513719538" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://vk.com/club216958926" target="_blank"><i class="fa fa-vk"></i></a>
+          <a href="https://t.me/ElinaUrusova" target="_blank"><i class="fa fa-telegram"></i></a>
+        </div>
+      </nav> 
+    </div>
+  </header>
+
+  <script>
+   window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  
+  // получаем все пункты меню
+  var navLinks = document.querySelectorAll('nav a');
+  
+  // для каждого пункта меню проверяем, находится ли соответствующая секция на экране
+  navLinks.forEach(function(link) {
+    var section = document.querySelector(link.hash);
+    
+    if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
+  </script>
+
+<section id="about" class="about-me">
+  <h2>Обо мне</h2>
+  <div class="about-me-content">
+    <img src="img/face.jpg" alt="Фото обо мне">
+    <div class="about-me-text">
+    <h1>Урусова Людмила Петровна</h1>
+    <p>Город: Новосибирск</p>
+    <p>Общий стаж: 27 лет</p>
+    <p>Педагогический стаж: 27 лет </p>
+    <p>Квалификационная категория: 1 категория </p>
+    <p>Уровень образования: Высшее</p>
+    <p>Квалификация: Учитель начальных классов</p>
+    <hr>
+    <p>Должность:Воспитатель в группе компенсирующего вида для детей с нарушениями речи</p>
+    <p>Место работы: МКДОУ детский сад № 422 Сибирячок </p>
+    <p>Адрес учреждения:Киевская ул., 19</p>
+    <p>Телефон учреждения:+7 (383) 341-88-12</p>
+  </div>
+  </div>
+
+<br><br><br><p><font size="5" align="center" color="3d0f68">Образование</font></p>
+<section id="education" class="education">
+  <div class="education__item">
+    <h2>Название раздела 1</h2>
+    <p>Описание раздела 1</p>
+  </div>
+  <div class="education__arrow">
+    <i class="fas fa-angle-double-right"></i>
+  </div>
+  <div class="education__item">
+    <h2>Название раздела 2</h2>
+    <p>Описание раздела 2</p>
+  </div>
+  <div class="education__arrow">
+    <i class="fas fa-angle-double-right"></i>
+  </div>
+  <div class="education__item">
+    <h2>Название раздела 3</h2>
+    <p>Описание раздела 3</p>
+  </div>
+  <div class="education__arrow">
+    <i class="fas fa-angle-double-right"></i>
+  </div>
+  <div class="education__item">
+    <h2>Название раздела 4</h2>
+    <p>Описание раздела 4</p>
+  </div>
+</section>
+   </div>
+</section>
+
+<section id="achievements" class="achievements">
+  <div class="achievements">
+    <h2>Достижения</h2>
+    <div class="certificates">
+      <div class="certificate">
+        <img src="img/svid.png" alt="Грамота 1">
+        <p>Сертификат за участие в вебинаре</p>
+      </div>
+      <div class="certificate">
+        <img src="img/svid8.jpg" alt="Диплом 1"">
+        <p>Диплом за участие в конкурсе научных работ</p>
+      </div>
+      <div class="certificate">
+        <img src="img/svid3.jpg" alt="Грамота 2">
+        <p>Грамота за участие в литературном конкурсе</p>
+      </div>
+      <div class="certificate">
+        <img src="img/svid3.jpg" alt="Диплом 2">
+        <p>Диплом за участие в конференции по истории</p>
+      </div>
+    </div>
+  </div>
+  <div class="container_for_tab">
+    <div class="but_for_tab">Показать еще</div>
+    <div class="hidden_block tab_content">
+      <div class="certificates">
+        <div class="certificate">
+          <img src="img/svid1.jpg" alt="Грамота 1">
+          <p>Грамота за участие в олимпиаде по математике</p>
+        </div>
+        <div class="certificate">
+          <img src="img/svid2.jpg" alt="Диплом 1">
+          <p>Диплом за участие в конкурсе научных работ</p>
+        </div>
+        <div class="certificate">
+          <img src="img/svid3.jpg" alt="Грамота 2">
+          <p>Грамота за участие в литературном конкурсе</p>
+        </div>
+        <div class="certificate">
+          <img src="img/svid3.jpg" alt="Диплом 2">
+          <p>Диплом за участие в конференции по истории</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function tab(but_tab, hidden_block_tab) {
+  /*проверяем на событие нажатия на кнопку которыю вы передаёте в качестве параметра*/
+but_tab.addEventListener("click", function() {
+      /*если у блока с контентом есть класс "hidden_block"*/
+    if(hidden_block_tab.classList.contains('hidden_block')) {
+          /*удаляем класс "hidden_block"*/
+        hidden_block_tab.classList.remove('hidden_block');
+          /*ставим класс "visible_block"*/
+        hidden_block_tab.classList.add('visible_block');
+    }
+      /*если у блока с контентом есть класс "visible_block"*/
+    else if(hidden_block_tab.classList.contains('visible_block')) {
+        hidden_block_tab.classList.remove('visible_block');
+        hidden_block_tab.classList.add('hidden_block');
+    }
+}); 
+}
+/*находим элемент кнопку*/
+var download_more = document.querySelector('.container_for_tab .but_for_tab');
+/*находим элемент блока со скрытым контентом*/
+var hidden_list = document.querySelector('.container_for_tab .tab_content');
+
+/*запускаем функцию и передаём в неё параметры*/
+tab(download_more, hidden_list);
+  </script>
+
+<script>
+  const toggleButton = document.querySelector('.but_for_tab');
+const tabContent = document.querySelector('.tab_content');
+
+toggleButton.addEventListener('click', () => {
+  if (tabContent.style.display === 'none') {
+    tabContent.style.display = 'block';
+    toggleButton.textContent = 'Скрыть';
+  } else {
+    tabContent.style.display = 'none';
+    toggleButton.textContent = 'Показать ещё';
+  }
+});
+</script>
+</section>
+
+<section id="documents" class="documents">
+  <div class="header">
+    <h2><font color="#3d0f68">Докумены и публикации</font></h2>
+   </div>
+   <div class="content">
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Вот оно какое наше лето</p>
+     <a href="doc/Вот оно какое наше лето.doc">Скачать документ</a>
+    </div>
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Советы родителям по организации питаия</p>
+     <a href="doc/Советы родителям по организации питания детей..doc">Скачать документ</a>
+    </div>
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Сценарий развлечения детей "Масленица"</p>
+     <a href="doc/Сценарий развлечения в старшей группе.docx">Скачать документ</a>
+    </div>
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Литературный час «В гостях у С. Михалкова».</p>
+     <a href="doc/михалков.docx">Скачать документ</a>
+    </div>
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Описание блока 5</p>
+     <a href="#">Скачать документ</a>
+    </div>
+    <div class="block">
+     <h2><i class="fa fa-file-text"></i></h2>
+     <p>Описание блока 6</p>
+     <a href="#">Скачать документ</a>
+    </div>
+    <div class="block">
+      <h2><i class="fa fa-file-text"></i></h2>
+      <p>Описание блока 6</p>
+      <a href="#">Скачать документ</a>
+     </div>
+     <div class="block">
+      <h2><i class="fa fa-file-text"></i></h2>
+      <p>Описание блока 6</p>
+      <a href="#">Скачать документ</a>
+     </div>
+     <div class="block">
+      <h2><i class="fa fa-file-text"></i></h2>
+      <p>Описание блока 6</p>
+      <a href="#">Скачать документ</a>
+     </div>
+   </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2><font color="3d0f68">Фотогалерея</font></h2>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery.html"> <img src="img/photo1.jpg" alt="rover" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          Раскрашиваем пряники
+        </h4>
+        <p>
+          Для детей провели мастер класс по раскрашиванию пряников
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery1.html"><img src="img/photo1.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          Масленица
+        </h4>
+        <p>
+        Как дети отпраздновали масленицу.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery2.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+         Детский утреник "8 марта"
+        </h4>
+        <p>
+         Дети поздравили своих мам, бабушек.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery3.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          How to Keep Going When You Don’t Know What’s Next
+        </h4>
+        <p>
+          The future can be scary, but there are ways to
+          deal with that fear.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery4.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          How to Keep Going When You Don’t Know What’s Next
+        </h4>
+        <p>
+          The future can be scary, but there are ways to
+          deal with that fear.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery5.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          How to Keep Going When You Don’t Know What’s Next
+        </h4>
+        <p>
+          The future can be scary, but there are ways to
+          deal with that fear.
+        </p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery6.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          How to Keep Going When You Don’t Know What’s Next
+        </h4>
+        <p>
+          The future can be scary, but there are ways to
+          deal with that fear.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a href="gallery7.html"><img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg" alt="ballons" /></a>
+      </div>
+      <div class="card-body">
+        <h4>
+          How to Keep Going When You Don’t Know What’s Next
+        </h4>
+        <p>
+          The future can be scary, but there are ways to
+          deal with that fear.
+        </p>
+      </div>
+    </div>
+</section>
+
+<section id="feedback">
+  <h2><font face="Open Sans">Обратная связь</font> </h2>
+  <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>Если у вас есть вопросы, свяжитесь со мной</span>
+            </div>
+            <div class="app-contact">Номер : +7 913 799 87 57</div>
+            <div class="app-contact">Адрес: Киевская ул., 19</div>
+          </div>
+          
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Имя" name="name">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="Почта" name="email">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="Сообщение" name="massage">
+              </div>
+              <form method="post" action="sendmail.php">
+              <div class="app-form-group buttons">
+                <button class="app-form-button">Отправить</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+ </section>
+
+   <footer> 
+    <div class="logo"> 
+      <img src="img/logo.png" alt="Логотип"> 
+    </div> 
+    <div class="links"> 
+      <a href="#about">Обо мне</a> 
+      <a href="#achievements">Достижения</a> 
+      <a href="#documents">Документы и публикации</a> 
+      <a href="#gallery">Фотогалерея</a> 
+      <a href="#feedback">Обратная связь</a> 
+    </div> 
+    <div class="social-links"> 
+      <a href="https://wa.me/79137998757" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://vk.com/club216958926" target="_blank"><i class="fa fa-vk"></i></a>
+      <a href="https://t.me/UrusovaLP" target="_blank"><i class="fa fa-telegram"></i></a>
+    </div> 
+  </footer>
+ </body>
+ </html>
+
